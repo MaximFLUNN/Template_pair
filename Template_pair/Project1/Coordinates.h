@@ -4,7 +4,7 @@
 /// <summary>
 /// Класс координат, имеющий в себе два поля (int)
 /// <para>-int first;</para>
-/// <remarks>-int second;</remarks>
+/// <para>-int second;</para>
 /// <para>Инициализаторы:</para>
 /// <para>-Coordinates()</para>
 /// <para>-Coordinates(int _first, int _second)</para>
@@ -20,14 +20,31 @@ class Coordinates {
 	int second;
 
  public:
-
 	 Coordinates();
 	 Coordinates(int _first, int _second);
 	 Coordinates(const Coordinates& data);
 
-	 Coordinates operator + (const Coordinates& data);
+	 Coordinates operator * (Coordinates& data);
+	 Coordinates operator / (Coordinates& data);
+	 Coordinates operator % (Coordinates& data);
+	 Coordinates operator + (Coordinates& data);
+	 Coordinates operator += (Coordinates& data);
+	 Coordinates operator - (Coordinates& data);
+	 Coordinates operator -= (Coordinates& data);
 	 Coordinates operator = (const Coordinates& data);
+	 bool operator == (Coordinates& data);
+	 bool operator >= (Coordinates& data);
+	 bool operator <= (Coordinates& data);
+	 bool operator > (Coordinates& data);
+	 bool operator < (Coordinates& data);
+	 bool operator != (Coordinates& data);
 
+	 /// <summary> Печатает переменные в консоль </summary>
 	 void iPrint();
+	 /// <summary> Меняет значения местами в классе "Coordinates" </summary>
+	 void iSwap();
+	 /// <summary> Меняет значения местами в двух классов "Coordinates" </summary>
+	 /// <param name=''>Принимает класс "Coordinates"</param>
+	 void iSwap(Coordinates& data);
 };
 
