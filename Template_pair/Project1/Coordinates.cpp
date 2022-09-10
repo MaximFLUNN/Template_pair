@@ -1,85 +1,110 @@
 #include "Coordinates.h"
 
-std::ostream& operator << (std::ostream& out, Coordinates& data) {
-	out << "First: " << data.first << "\n" << "Second: " << data.second << "\n";
-	return out;
-}
+template <class Type_1, class Type_2>
+Coordinates<Type_1, Type_2>::Coordinates() : first(0), second(0) {}
 
-Coordinates::Coordinates() : first(0), second(0) {}
+template <class Type_1, class Type_2>
+Coordinates<Type_1, Type_2>::Coordinates(Type_1 _first, Type_2 _second) : first(_first), second(_second) {}
 
-Coordinates::Coordinates(int _first, int _second) : first(_first), second(_second) {}
+template <class Type_1, class Type_2>
+Coordinates<Type_1, Type_2>::Coordinates(const Coordinates& data) : first(data.first), second(data.second) {}
 
-Coordinates::Coordinates(const Coordinates& data) : first(data.first), second(data.second) {}
-
-Coordinates Coordinates::operator * (Coordinates& data) { 
+template <class Type_1, class Type_2>
+Coordinates<Type_1, Type_2> Coordinates<Type_1, Type_2>::operator * (Coordinates& data) {
 	return Coordinates(first * data.first, second * data.second); 
 }
 
-Coordinates Coordinates::operator / (Coordinates& data) {
+template <class Type_1, class Type_2>
+Coordinates<Type_1, Type_2> Coordinates<Type_1, Type_2>::operator / (Coordinates& data) {
 	return Coordinates(first / data.first, second / data.second);
 }
 
-Coordinates Coordinates::operator % (Coordinates& data) {
-	return Coordinates(first % data.first, second % data.second);
+template <class Type_1, class Type_2>
+Coordinates<Type_1, Type_2> Coordinates<Type_1, Type_2>::operator % (Coordinates& data) {
+	return Coordinates(floor(first / data.first), floor(second / data.second));
 }
 
-Coordinates Coordinates::operator += (Coordinates& data) {
+template <class Type_1, class Type_2>
+Coordinates<Type_1, Type_2> Coordinates<Type_1, Type_2>::operator += (Coordinates& data) {
 	return Coordinates(first += data.first, second += data.second);
 }
 
-Coordinates Coordinates::operator -= (Coordinates& data) {
+template <class Type_1, class Type_2>
+Coordinates<Type_1, Type_2> Coordinates<Type_1, Type_2>::operator -= (Coordinates& data) {
 	return Coordinates(first -= data.first, second -= data.second);
 }
 
-Coordinates Coordinates::operator + (Coordinates& data) {
+template <class Type_1, class Type_2>
+Coordinates<Type_1, Type_2> Coordinates<Type_1, Type_2>::operator + (Coordinates& data) {
 	return Coordinates(first + data.first, second + data.second);
 }
 
-Coordinates Coordinates::operator - (Coordinates& data) {
+template <class Type_1, class Type_2>
+Coordinates<Type_1, Type_2> Coordinates<Type_1, Type_2>::operator - (Coordinates& data) {
 	return Coordinates(first - data.first, second - data.second);
 }
 
-Coordinates Coordinates::operator = (const Coordinates& data) {
+template <class Type_1, class Type_2>
+Coordinates<Type_1, Type_2> Coordinates<Type_1, Type_2>::operator = (const Coordinates& data) {
 	if (this != &data) {
 		return Coordinates(first = data.first, second = data.second);
 	}
 }
 
-bool Coordinates::operator == (Coordinates& data) {
+template <class Type_1, class Type_2>
+bool Coordinates<Type_1, Type_2>::operator == (Coordinates& data) {
 	return ((first == data.first) && (second == data.second)) ? true : false;
 }
 
-bool Coordinates::operator >= (Coordinates& data) {
+template <class Type_1, class Type_2>
+bool Coordinates<Type_1, Type_2>::operator >= (Coordinates& data) {
 	return ((first >= data.first) && (second >= data.second)) ? true : false;
 }
 
-bool Coordinates::operator <= (Coordinates& data) {
+template <class Type_1, class Type_2>
+bool Coordinates<Type_1, Type_2>::operator <= (Coordinates& data) {
 	return ((first <= data.first) && (second <= data.second)) ? true : false;
 }
 
-bool Coordinates::operator > (Coordinates& data) {
+template <class Type_1, class Type_2>
+bool Coordinates<Type_1, Type_2>::operator > (Coordinates& data) {
 	return ((first > data.first) && (second > data.second)) ? true : false;
 }
 
-bool Coordinates::operator < (Coordinates& data) {
+template <class Type_1, class Type_2>
+bool Coordinates<Type_1, Type_2>::operator < (Coordinates& data) {
 	return ((first < data.first) && (second < data.second)) ? true : false;
 }
 
-bool Coordinates::operator != (Coordinates& data) {
+template <class Type_1, class Type_2>
+bool Coordinates<Type_1, Type_2>::operator != (Coordinates& data) {
 	return ((first != data.first) && (second != data.second)) ? true : false;
 }
 
-void Coordinates::iPrint() {
+template <class Type_1, class Type_2>
+void Coordinates<Type_1, Type_2>::iPrint() {
 	std::cout << "First: " << first << "\n" << "Second: " << second << "\n";
 }
 
-void Coordinates::iSwap() {
-	int tmp = first;
+template <class Type_1, class Type_2>
+void Coordinates<Type_1, Type_2>::iPrint(bool flag) {
+	flag ? std::cout << "(" << first << "; " << second << ")" << "\n" : std::cout << first << "; " << second << "\n";
+}
+
+template <class Type_1, class Type_2>
+void Coordinates<Type_1, Type_2>::iPrint_type() {
+	std::cout << "First: " << first << " -> | " << typeid(first).name() << "\n" << "Second: " << second << " -> | " << typeid(second).name() << "\n";
+}
+
+template <class Type_1, class Type_2>
+void Coordinates<Type_1, Type_2>::iSwap() {
+	Type_1 tmp = first;
 	first = second;
 	second = tmp;
 }
 
-void Coordinates::iSwap(Coordinates& data) {
+template <class Type_1, class Type_2>
+void Coordinates<Type_1, Type_2>::iSwap(Coordinates& data) {
 	Coordinates tmp = Coordinates(first, second);
 	first = data.first;
 	second = data.second;
@@ -87,4 +112,14 @@ void Coordinates::iSwap(Coordinates& data) {
 	data.second = tmp.second;
 }
 
-
+// явное инстанцирование шаблона класса с различными параметрами !!!
+// ѕозвол¤ет компил¤тору заранее скомпилировать код шаблона дл¤ данных наборов аргумента
+template Coordinates<int, int>;
+template Coordinates<float, float>;
+template Coordinates<double, double>;
+template Coordinates<int, float>;
+template Coordinates<int, double>;
+template Coordinates<float, int>;
+template Coordinates<double, int>;
+template Coordinates<float, double>;
+template Coordinates<double, float>;

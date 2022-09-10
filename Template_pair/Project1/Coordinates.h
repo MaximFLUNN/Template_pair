@@ -1,27 +1,27 @@
 #pragma once
 #include <iostream>
+#include <typeinfo>
 
 /// <summary>
-/// Класс координат, имеющий в себе два поля (int)
+/// В Р»Р°СЃСЃ РєРѕРѕСЂРґРёРЅР°С‚, РёРјРµСЋС‰РёР№ РІ СЃРµР±Рµ РґРІР° РїРѕР»В¤ (int)
 /// <para>-int first;</para>
 /// <para>-int second;</para>
-/// <para>Инициализаторы:</para>
+/// <para>В»РЅРёС†РёР°Р»РёР·Р°С‚РѕСЂС‹:</para>
 /// <para>-Coordinates()</para>
 /// <para>-Coordinates(int _first, int _second)</para>
 /// <para>-Coordinates(const Coordinates data)</para>
-/// <para>Методы:</para>
-/// <para>-iPrint() - выводит значения в консоль</para>
+/// <para>С›РµС‚РѕРґС‹:</para>
+/// <para>-iPrint() - РІС‹РІРѕРґРёС‚ Р·РЅР°С‡РµРЅРёВ¤ РІ РєРѕРЅСЃРѕР»СЊ</para>
 /// </summary>
+template <class Type_1, class Type_2>
 class Coordinates {
-	friend std::ostream& operator << (std::ostream& out, Coordinates& data);
-	
  private:
-	int first;
-	int second;
+	Type_1 first;
+	Type_2 second;
 
  public:
 	 Coordinates();
-	 Coordinates(int _first, int _second);
+	 Coordinates(Type_1 _first, Type_2 _second);
 	 Coordinates(const Coordinates& data);
 
 	 Coordinates operator * (Coordinates& data);
@@ -39,12 +39,21 @@ class Coordinates {
 	 bool operator < (Coordinates& data);
 	 bool operator != (Coordinates& data);
 
-	 /// <summary> Печатает переменные в консоль </summary>
+	 /// <summary> С•РµС‡Р°С‚Р°РµС‚ РїРµСЂРµРјРµРЅРЅС‹Рµ РІ РєРѕРЅСЃРѕР»СЊ </summary>
 	 void iPrint();
-	 /// <summary> Меняет значения местами в классе "Coordinates" </summary>
+	 /// <summary> С•РµС‡Р°С‚Р°РµС‚ РїРµСЂРµРјРµРЅРЅС‹Рµ РІ РєРѕРЅСЃРѕР»СЊ РІ РІРёРґРµ a; b РїСЂРё false Рё (a; b) РїСЂРё true</summary>
+	 void iPrint(bool flag);
+	 /// <summary> С•РµС‡Р°С‚Р°РµС‚ РёРјВ¤ С‚РёРїР° РґР°РЅРЅС‹С… РІ РєРѕРЅСЃРѕР»СЊ </summary>
+	 void iPrint_type();
+	 /// <summary> С›РµРЅВ¤РµС‚ Р·РЅР°С‡РµРЅРёВ¤ РјРµСЃС‚Р°РјРё РІ РєР»Р°СЃСЃРµ "Coordinates" </summary>
 	 void iSwap();
-	 /// <summary> Меняет значения местами в двух классов "Coordinates" </summary>
-	 /// <param name=''>Принимает класс "Coordinates"</param>
+	 /// <summary> С›РµРЅВ¤РµС‚ Р·РЅР°С‡РµРЅРёВ¤ РјРµСЃС‚Р°РјРё РІ РґРІСѓС… РєР»Р°СЃСЃРѕРІ "Coordinates" </summary>
+	 /// <param name=''>С•СЂРёРЅРёРјР°РµС‚ РєР»Р°СЃСЃ "Coordinates"</param>
 	 void iSwap(Coordinates& data);
+
+	 friend std::ostream& operator << (std::ostream& out, const Coordinates& data) {
+		 out << "First: " << data.first << "\n" << "Second: " << data.second << "\n";
+		 return out;
+	 }
 };
 
