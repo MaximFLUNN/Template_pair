@@ -13,12 +13,15 @@ int main() {
 		menu.reset_iKey();
 		if (answer.iKey == KEY_EXIT || answer.choose == ITEMS::exit) {
 			system("cls");
-			std::cout << "Exit program!";
+			std::cout << color(red).print("Exit program!");
 			_getch();
 			break;
 		}
 		else if (answer.choose == ITEMS::btn1) {
-
+			system("cls");
+			tasker.test(answer.iterator);
+			_getch();
+			system("cls");
 		}
 		else if (answer.choose == ITEMS::btn2) {
 			if (answer.iterator == 0 || answer.iterator == 1 || answer.iterator == 3) {
@@ -34,20 +37,20 @@ int main() {
 					answer = menu.Enable();
 					if (answer.iKey == KEY_EXIT || answer.choose == ITEMS::exit) {
 						system("cls");
-						std::cout << "Exit stack menu!";
+						std::cout << color(red).print("Exit stack menu!");
 						menu.type_switch(TYPE::main);
 						break;
 					}
 					else if (answer.choose == ITEMS::btn1) {
 						system("cls");
-						std::cout << "Add element";
+						std::cout << color(yellow).print("Add element");
 						tasker.t3.push(answer.value);
 						_getch();
 					}
 					else if (answer.choose == ITEMS::btn2) {
 						system("cls");
-						if (tasker.t3.stack.empty()) { std::cout << "Stack is clear!"; }
-						else { std::cout << "Element deleted: " << tasker.t3.stack.top(); }
+						if (tasker.t3.stack.empty()) { std::cout << color(yellow).print("Stack is clear!"); }
+						else { std::cout << color(yellow) << "Element deleted: " << color(azure) << tasker.t3.stack.top() << color(); }
 						tasker.t3.pop();
 						_getch();
 					}
@@ -58,7 +61,7 @@ int main() {
 					}
 					else if (answer.choose == ITEMS::btn4) {
 						system("cls");
-						std::cout << "Cleared!";
+						std::cout << color(yellow).print("Cleared!");
 						tasker.t3.clear();
 						_getch();
 					}
@@ -70,3 +73,4 @@ int main() {
 	}
 	return 0;
 }
+
