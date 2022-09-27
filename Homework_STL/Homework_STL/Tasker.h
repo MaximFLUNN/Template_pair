@@ -341,7 +341,7 @@ public:
 			}
 		}
 		else { passed = false; }
-		std::cout << (true ? color(azure).print(" : Создание вектора размером 20 единиц, заполненный нулями\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 1 : ") : "");
+		std::cout << (true ? color(azure).print(" : Создание вектора размером 20 единиц, заполненный нулями\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 1  : ") : "");
 		//===========================================
 		// Step test 2
 		passed = false;
@@ -358,7 +358,7 @@ public:
 			}
 		}
 		else if (t1.vector.size() == 0 && testVector.vector.size() == 0) { passed = true; }
-		std::cout << (true ? color(azure).print(" : Заполнение вектора рандомными числами (от -100, до 100)\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 2 : ") : "");
+		std::cout << (true ? color(azure).print(" : Заполнение вектора рандомными числами (от -100, до 100)\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 2  : ") : "");
 		testVector = t1;
 		//===========================================
 		// Step test 3
@@ -376,7 +376,7 @@ public:
 		int _min = *std::min_element(begin(t1.vector), end(t1.vector));
 
 		if (min == _min && max == _max ) { passed = true; }
-		std::cout << (true ? color(azure).print(" : Получение максимального и минимального элемента\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 3 : ") : "");
+		std::cout << (true ? color(azure).print(" : Получение максимального и минимального элемента\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 3  : ") : "");
 		//===========================================
 		// Step test 4
 		testVector = t1;
@@ -385,7 +385,7 @@ public:
 		t1.sorting();
 		// testing
 		for (int i = 0; i < t1.vector.size() - 1; i++) { t1.vector[i] <= t1.vector[i + 1] ? passed : passed = false; }
-		std::cout << (true ? color(azure).print(" : Отсортировать вектор\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 4 : ") : "");
+		std::cout << (true ? color(azure).print(" : Отсортировать вектор\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 4  : ") : "");
 		//===========================================
 		// Step test 5
 		passed = true;
@@ -395,7 +395,7 @@ public:
 		t1.insert4numbers();
 		// testing
 		testVector.vector.size() == t1.vector.size() - 4 ? NULL : passed = !passed;
-		std::cout << (true ? color(azure).print(" : Добавление в конец 4-ёх элементов\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 5 : ") : "");
+		std::cout << (true ? color(azure).print(" : Добавление в конец 4-ёх элементов\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 5  : ") : "");
 		//===========================================
 		// Step test 6
 		passed = true;
@@ -405,7 +405,7 @@ public:
 		t1.less10to0();
 		// testing
 		for (int i = 0; i < t1.vector.size(); i++) { t1.vector[i] == 0 ? testVector.vector[i] < 10 ? NULL : passed = false : NULL; }
-		std::cout << (true ? color(azure).print(" : Все элементы меньше 10-ти заменить на 0\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 6 : ") : "");
+		std::cout << (true ? color(azure).print(" : Все элементы меньше 10-ти заменить на 0\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 6  : ") : "");
 		//===========================================
 		// Step test 7
 		passed = false;
@@ -413,7 +413,7 @@ public:
 		testVector = t1;
 		// task
 		for (int i = 0; i < t1.vector.size(); i++) { t1.vector[i] > 20 ? passed = true : NULL; }
-		std::cout << (true ? color(azure).print(" : Найти все элементы больше 20\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 7 : ") : "");
+		std::cout << (true ? color(azure).print(" : Найти все элементы больше 20\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 7  : ") : "");
 		// testing
 		//===========================================
 		// Step test 8
@@ -424,7 +424,7 @@ public:
 		t1.mult3();
 		// testing
 		for (int i = 0; i < t1.vector.size(); i++) { !(testVector.vector[i] & 1) ? t1.vector[i] == testVector.vector[i] * 3 ? NULL : passed = false : NULL; }
-		std::cout << (true ? color(azure).print(" : Все чётные элементы домножить на 3\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 8 : ") : "");
+		std::cout << (true ? color(azure).print(" : Все чётные элементы домножить на 3\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 8  : ") : "");
 		//===========================================
 		// Step test 9
 		passed = false;
@@ -434,7 +434,7 @@ public:
 		t1.rundom_shuffle();
 		// testing
 		for (int i = 0; i < t1.vector.size(); i++) { testVector.vector[i] != t1.vector[i] ? passed = true : NULL; }
-		std::cout << (true ? color(azure).print(" : Произвольно перемешать элементы\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 9 : ") : "");
+		std::cout << (true ? color(azure).print(" : Произвольно перемешать элементы\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 9  : ") : "");
 		//===========================================
 		// Step test 10
 		passed = false;
@@ -468,14 +468,286 @@ public:
 	}
 
 	void atest_2() {
-
+		bool passed = true;
+		task_2 testList;
+		//===========================================
+		// Step test 1
+		passed = true;
+		// test
+		testList = t2;
+		// task
+		t2 = task_2();
+		// testing
+		t2.list.empty() && testList.list.empty() ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Объявить пустой список\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 1  : ") : "");
+		//===========================================
+		// Step test 2
+		passed = true;
+		// test
+		testList = t2;
+		// task
+		t2.add_back5();
+		// testing
+		t2.list.size() == testList.list.size() + 5 ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Добавить 5 элементов в конец\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 2  : ") : "");
+		//===========================================
+		// Step test 3
+		passed = true;
+		// test
+		testList = t2;
+		// task
+		// testing
+		t2.list.front() == testList.list.front() ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Вывести элемент из начала списка\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 3  : ") : "");
+		//===========================================
+		// Step test 4
+		passed = true;
+		// test
+		testList = t2;
+		// task
+		t2.add_front2();
+		// testing
+		t2.list.size() == testList.list.size() + 2 ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Добавить в начало списка 2 элемента\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 4  : ") : "");
+		//===========================================
+		// Step test 5
+		passed = true;
+		// test
+		testList = t2;
+		// task
+		t2.delete4elem();
+		// testing
+		t2.list.size() + 1 == testList.list.size() ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Удалить 4-ый элемент\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 5  : ") : "");
+		//===========================================
+		// Step test 6
+		passed = true;
+		// test
+		testList = t2;
+		// task
+		//t2._3randpos3elem();
+		auto f = [&](task_2 t2) {
+			int element = rand() % 201 - 100;
+			int size = t2.list.size();
+			for (int i = 0, j = 0; i < 3; i++) {
+				int pos = rand() % size;
+				for (auto& elem : t2.list) { j++ == pos ? elem = element : elem; }
+				j = 0;
+			}
+		};
+		f(t2);
+		// testing
+		for (int i = 0; i < t2.list.size(); i++) { 
+			int a = 0, b = 0, c = 0;
+			for (auto& elem : t2.list) {
+				if (c == i) {
+					a = elem;
+					c = 0;
+					break;
+				}
+				c++;
+			}
+			for (auto& elem : testList.list) {
+				if (c == i) {
+					b = elem;
+					c = 0;
+					break;
+				}
+				c++;
+			}
+			a != b ? passed = false : NULL;
+		}
+		std::cout << (true ? color(azure).print(" : Вставить на 3 случайные позиции случайный элемент\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 6  : ") : "");
+		//===========================================
+		// Step test 7
+		passed = true;
+		// test
+		testList = t2;
+		// task
+		t2.del_last();
+		// testing
+		t2.list.size() + 1 == testList.list.size() ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Удалить последний элемент списка\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 7  : ") : "");
+		//===========================================
+		// Step test 8
+		passed = true;
+		// test
+		testList = t2;
+		// task
+		t2.del_last();
+		// testing
+		t2.list.size() + 1 == testList.list.size() ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Удалить элемент из начала списка\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 8  : ") : "");
+		//===========================================
+		// Step test 9
+		passed = true;
+		// test
+		testList = t2;
+		// task
+		t2.insert_to_center();
+		// testing
+		t2.list.size() == testList.list.size() + 2 ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Добавить в середину списка 2 элемента\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 9  : ") : "");
+		//===========================================
+		// Step test 10
+		passed = true;
+		// test
+		testList = t2;
+		// task
+		t2.del_dublicate();
+		// testing
+		auto funique = [&](task_2 t2) {
+			int number;
+			int counter = 0;
+			for (auto it = begin(t2.list); it != end(t2.list); it++) {
+				number = *it;
+				for (auto ita = begin(t2.list); ita != end(t2.list); ita++) {
+					if (*ita == number) {
+						counter++;
+						if (counter > 1) {
+							return false;
+						}
+					}
+				}
+				counter = 0;
+			}
+			return true;
+		};
+		funique(t2) ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Удалить повторяющиеся элементы списка\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 10 : ") : "");
+		//===========================================
+		// Step test 11
+		passed = true;
+		// test
+		testList = t2;
+		// task
+		t2.cleaner();
+		// testing
+		t2.list.empty() ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Очитстить список\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 11 : ") : "");
+		//===========================================
+		// Step test 12
+		passed = true;
+		// test
+		// task
+		// testing
+		t2.list.empty() ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Проверка чист ли список\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 12 : ") : "");
 	}
 
 	void atest_3() {
+		//===========================================
+		// Step test 1
+		bool passed = true;
+		task_3 testStack;
+		// test
+		testStack = t3;
 
+		// task
+		t3.push(1);
+
+		// testing
+		t3.stack.size() == testStack.stack.size() + 1 ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Положить элемент\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 1  : ") : "");
+		//===========================================
+		// Step test 2
+		passed = true;
+		// test
+		testStack = t3;
+
+		// task
+		t3.pop();
+
+		// testing
+		t3.stack.size() + 1 == testStack.stack.size() ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Забрать элемент\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 2  : ") : "");
+		//===========================================
+		// Step test 3
+		passed = true;
+		std::cout << (true ? color(azure).print(" : Напечатать содержимое в правильном виде\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 3  : ") : "");
+		//===========================================
+		// Step test 4
+		passed = true;
+		// test
+		testStack = t3;
+
+		// task
+		t3.clear();
+
+		// testing
+		t3.stack.empty() ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Очистить стек\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 4  : ") : "");
 	}
 
 	void atest_4() {
+		//===========================================
+		// Step test 1
+		bool passed = true;
+		task_4 testStack;
+		// test
+		testStack = t4;
+		// task
+		t4.generation(t4.A);
+		// testing
+		!(t4.A.empty()) ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Задать эелемент A\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 1  : ") : "");
+		//===========================================
+		// Step test 2
+		passed = true;
+		// test
+		testStack = t4;
+		// task
+		t4.generation(t4.B);
+		// testing
+		!(t4.A.empty()) ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Задать эелемент B\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 2  : ") : "");
+		//===========================================
+		// Step test 3
+		passed = true;
+		// test
+		testStack = t4;
+		// task
+		//t4.intersection();
+		// testing
+		std::set<int> bf_set;
+		for (auto& elem : t4.A) { for (auto& _elem : t4.B) { if (elem == _elem) { bf_set.insert(elem); } } }
+		bf_set.size() < t4.A.size() ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Пересечение ножеств\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 3  : ") : "");
+		//===========================================
+		// Step test 4
+		passed = true;
+		// test
+		testStack = t4;
+		// task
+		//t4.difference();
+		// testing
+		std::set<int> bf_set1;
+		for (auto& elem : t4.A) { for (auto& _elem : t4.B) { if (elem != _elem) { bf_set.insert(elem); } } }
+		bf_set1.size() < t4.A.size() ? NULL : passed = false;
+		std::cout << (true ? color(azure).print(" : Разность ножеств\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 4  : ") : "");
+		//===========================================
+		// Step test 5
+		passed = true;
+		// test
+		testStack = t4;
+		// task
+		// testing
+		auto f = [](task_4 t4) {
+			std::set<int> bf_set;
+			bool flag = false;
+			for (auto& elem : { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 }) {
+				for (auto& _elem : t4.A) {
+					if (elem == _elem) {
+						flag = true;
+					}
+				}
+				if (!flag) bf_set.insert(elem);
+				flag = false;
+			}
+			return bf_set;
+		};
+		for (auto& elem : t4.A) { for (auto& _elem : f(t4)) { elem != _elem ? NULL : passed = false; } }
+		std::cout << (true ? color(azure).print(" : Разность ножеств\n") : "") << (passed ? color(green).print("[PASSED]") : color(red).print("[INVALID]")) << (true ? color(azure).print("Step 5  : ") : "");
 
 	}
 
@@ -483,37 +755,37 @@ public:
 
 	void atask_1() {
 		// Step 1
-		std::cout << color(blue).print("Step 1 ") << color(azure);
+		std::cout << color(blue).print("Step 1  ") << color(azure);
 		t1.create(20);
 		t1.print_vector(true);
 		// Step 2
-		std::cout << color(blue).print("Step 2 ") << color(azure);
+		std::cout << color(blue).print("Step 2  ") << color(azure);
 		t1.rundom_fill();
 		t1.print_vector(true);
 		// Step 3
-		std::cout << color(blue).print("Step 3 ") << color(azure);
+		std::cout << color(blue).print("Step 3  ") << color(azure);
 		t1.max_min_elem();
 		// Step 4
-		std::cout << color(blue).print("Step 4 ") << color(azure);
+		std::cout << color(blue).print("Step 4  ") << color(azure);
 		t1.sorting();
 		t1.print_vector(true);
 		// Step 5
-		std::cout << color(blue).print("Step 5 ") << color(azure);
+		std::cout << color(blue).print("Step 5  ") << color(azure);
 		t1.insert4numbers();
 		t1.print_vector(true);
 		// Step 6
-		std::cout << color(blue).print("Step 6 ") << color(azure);
+		std::cout << color(blue).print("Step 6  ") << color(azure);
 		t1.less10to0();
 		t1.print_vector(true);
 		// Step 7
-		std::cout << color(blue).print("Step 7 ") << color(azure);
+		std::cout << color(blue).print("Step 7  ") << color(azure);
 		t1.more20();
 		// Step 8
-		std::cout << color(blue).print("Step 8 ") << color(azure);
+		std::cout << color(blue).print("Step 8  ") << color(azure);
 		t1.mult3();
 		t1.print_vector(true);
 		// Step 9
-		std::cout << color(blue).print("Step 9 ") << color(azure);
+		std::cout << color(blue).print("Step 9  ") << color(azure);
 		t1.rundom_shuffle();
 		t1.print_vector(true);
 		// Step 10
