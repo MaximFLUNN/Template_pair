@@ -1,0 +1,22 @@
+﻿  Main.cpp
+D:\StudioProject\MatrixVector\MatrixVector\Menu.h(175,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\MatrixVector\MatrixVector\Menu.h(291,29): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\StudioProject\MatrixVector\MatrixVector\Menu.h(299,1): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\MatrixVector\MatrixVector\Menu.h(311,1): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\MatrixVector\MatrixVector\Menu.h(361,1): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\MatrixVector\MatrixVector\Menu.h(399,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\MatrixVector\MatrixVector\Menu.h(426,33): warning C4267: инициализация: преобразование из "size_t" в "unsigned int"; возможна потеря данных
+D:\StudioProject\MatrixVector\MatrixVector\Menu.h(438,17): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\StudioProject\MatrixVector\MatrixVector\Menu.h(449,26): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\MatrixVector\MatrixVector\Main.cpp(79,38): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\MatrixVector\MatrixVector\Main.cpp(94,39): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\MatrixVector\MatrixVector\Main.cpp(134,39): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\MatrixVector\MatrixVector\Main.cpp(174,39): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\MatrixVector\MatrixVector\Main.cpp(206,39): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\MatrixVector\MatrixVector\Main.cpp(246,30): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\MatrixVector\MatrixVector\Main.cpp(247,33): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\MatrixVector\MatrixVector\Main.cpp(269,29): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+Main.obj : error LNK2001: неразрешенный внешний символ "void __cdecl transpose(class std::vector<class std::vector<int,class std::allocator<int> >,class std::allocator<class std::vector<int,class std::allocator<int> > > >)" (?transpose@@YAXV?$vector@V?$vector@HV?$allocator@H@std@@@std@@V?$allocator@V?$vector@HV?$allocator@H@std@@@std@@@2@@std@@@Z).
+    Указание на символы, которые определены и могут подойти:
+      "void __cdecl transpose(class std::vector<class std::vector<int,class std::allocator<int> >,class std::allocator<class std::vector<int,class std::allocator<int> > > > &)" (?transpose@@YAXAEAV?$vector@V?$vector@HV?$allocator@H@std@@@std@@V?$allocator@V?$vector@HV?$allocator@H@std@@@std@@@2@@std@@@Z)
+D:\StudioProject\MatrixVector\x64\Release\MatrixVector.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
