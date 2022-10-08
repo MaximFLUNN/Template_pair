@@ -1,0 +1,13 @@
+﻿  Main.cpp
+D:\StudioProject\Console_menu\Console_menu\Menu.h(185,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\Console_menu\Console_menu\Menu.h(248,1): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\Console_menu\Console_menu\Menu.h(265,1): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\Console_menu\Console_menu\Menu.h(328,29): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\StudioProject\Console_menu\Console_menu\Menu.h(336,1): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\Console_menu\Console_menu\Menu.h(348,1): warning C4267: =: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\Console_menu\Console_menu\Menu.h(428,24): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+D:\StudioProject\Console_menu\Console_menu\Menu.h(429,29): warning C4018: <: несоответствие типов со знаком и без знака
+D:\StudioProject\Console_menu\Console_menu\Menu.h(440,17): warning C4244: =: преобразование "double" в "int", возможна потеря данных
+D:\StudioProject\Console_menu\Console_menu\Menu.h(450,26): warning C4267: инициализация: преобразование из "size_t" в "int"; возможна потеря данных
+Main.obj : error LNK2001: неразрешенный внешний символ "void __cdecl clear_screen_by_answer(void)" (?clear_screen_by_answer@@YAXXZ).
+D:\StudioProject\Console_menu\x64\Release\Console_menu.exe : fatal error LNK1120: неразрешенных внешних элементов: 1
