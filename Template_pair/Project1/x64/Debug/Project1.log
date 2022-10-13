@@ -1,0 +1,105 @@
+﻿  Coordinates.cpp
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(24,53): warning C4244: аргумент: преобразование "double" в "Type_2", возможна потеря данных
+          with
+          [
+              Type_2=int
+          ]
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(23): message : во время компиляции функции-члена класс шаблон "Coordinates<int,int> Coordinates<int,int>::operator %(Coordinates<int,int> &)"
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(117): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Coordinates<int,int>"
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(24,26): warning C4244: аргумент: преобразование "double" в "Type_1", возможна потеря данных
+          with
+          [
+              Type_1=int
+          ]
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(102,10): warning C4244: =: преобразование "Type_2" в "Type_1", возможна потеря данных
+          with
+          [
+              Type_2=float
+          ]
+          and
+          [
+              Type_1=int
+          ]
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(100): message : во время компиляции функции-члена класс шаблон "void Coordinates<int,float>::iSwap(void)"
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(103,11): warning C4244: =: преобразование "Type_1" в "Type_2", возможна потеря данных
+          with
+          [
+              Type_1=int
+          ]
+          and
+          [
+              Type_2=float
+          ]
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(102,10): warning C4244: =: преобразование "Type_2" в "Type_1", возможна потеря данных
+          with
+          [
+              Type_2=double
+          ]
+          and
+          [
+              Type_1=int
+          ]
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(100): message : во время компиляции функции-члена класс шаблон "void Coordinates<int,double>::iSwap(void)"
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(102,10): warning C4244: =: преобразование "Type_2" в "Type_1", возможна потеря данных
+          with
+          [
+              Type_2=int
+          ]
+          and
+          [
+              Type_1=float
+          ]
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(100): message : во время компиляции функции-члена класс шаблон "void Coordinates<float,int>::iSwap(void)"
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(103,11): warning C4244: =: преобразование "Type_1" в "Type_2", возможна потеря данных
+          with
+          [
+              Type_1=float
+          ]
+          and
+          [
+              Type_2=int
+          ]
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(103,11): warning C4244: =: преобразование "Type_1" в "Type_2", возможна потеря данных
+          with
+          [
+              Type_1=double
+          ]
+          and
+          [
+              Type_2=int
+          ]
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(100): message : во время компиляции функции-члена класс шаблон "void Coordinates<double,int>::iSwap(void)"
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(102,10): warning C4244: =: преобразование "Type_2" в "Type_1", возможна потеря данных
+          with
+          [
+              Type_2=double
+          ]
+          and
+          [
+              Type_1=float
+          ]
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(100): message : во время компиляции функции-члена класс шаблон "void Coordinates<float,double>::iSwap(void)"
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(124): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Coordinates<float,double>"
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(103,11): warning C4244: =: преобразование "Type_1" в "Type_2", возможна потеря данных
+          with
+          [
+              Type_1=double
+          ]
+          and
+          [
+              Type_2=float
+          ]
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(100): message : во время компиляции функции-члена класс шаблон "void Coordinates<double,float>::iSwap(void)"
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(125): message : выполняется компиляция ссылки на экземпляр класс шаблон функции "Coordinates<double,float>"
+  Main.cpp
+  Создание кода...
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(52): warning C4715: Coordinates<int,int>::operator=: значение возвращается не при всех путях выполнения
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(52): warning C4715: Coordinates<float,float>::operator=: значение возвращается не при всех путях выполнения
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(52): warning C4715: Coordinates<double,double>::operator=: значение возвращается не при всех путях выполнения
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(52): warning C4715: Coordinates<int,float>::operator=: значение возвращается не при всех путях выполнения
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(52): warning C4715: Coordinates<int,double>::operator=: значение возвращается не при всех путях выполнения
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(52): warning C4715: Coordinates<float,int>::operator=: значение возвращается не при всех путях выполнения
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(52): warning C4715: Coordinates<double,int>::operator=: значение возвращается не при всех путях выполнения
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(52): warning C4715: Coordinates<float,double>::operator=: значение возвращается не при всех путях выполнения
+D:\StudioProject\Template_pair\Template_pair\Project1\Coordinates.cpp(52): warning C4715: Coordinates<double,float>::operator=: значение возвращается не при всех путях выполнения
+  Project1.vcxproj -> D:\StudioProject\Template_pair\Template_pair\x64\Debug\Template_pair.exe

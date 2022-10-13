@@ -1,0 +1,6 @@
+﻿  Main.cpp
+D:\StudioProject\Vector_pair\Vector_pair\Main.cpp(9,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+  Menu.cpp
+Menu.obj : error LNK2005: "enum ITEMS __cdecl operator--(enum ITEMS &,int)" (??F@YA?AW4ITEMS@@AEAW40@H@Z) уже определен в Main.obj
+Menu.obj : error LNK2005: "enum ITEMS __cdecl operator++(enum ITEMS &,int)" (??E@YA?AW4ITEMS@@AEAW40@H@Z) уже определен в Main.obj
+D:\StudioProject\Vector_pair\x64\Release\Vector_pair.exe : fatal error LNK1169: обнаружен многократно определенный символ - один или более

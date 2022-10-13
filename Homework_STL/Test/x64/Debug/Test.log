@@ -1,0 +1,111 @@
+﻿  Source.cpp
+D:\StudioProject\Homework_STL\Test\phrases.h(50,2): error C2065: functions: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(9,22): error C2039: "placeholders": не является членом "std".
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\iostream(19): message : см. объявление "std"
+D:\StudioProject\Homework_STL\Test\functions.h(9,34): error C2871: placeholders: пространство имен с таким именем не существует
+D:\StudioProject\Homework_STL\Test\functions.h(11,18): error C2039: "function": не является членом "std".
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\iostream(19): message : см. объявление "std"
+D:\StudioProject\Homework_STL\Test\functions.h(11,26): error C2065: function: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(11,32): error C2144: синтаксическая ошибка: перед "int" требуется ")"
+D:\StudioProject\Homework_STL\Test\functions.h(11,32): error C2062: тип "int" не требуется
+D:\StudioProject\Homework_STL\Test\functions.h(11,36): error C2947: требуется ">" для завершения список аргументов шаблона, обнаружено ">>"
+D:\StudioProject\Homework_STL\Test\functions.h(11,36): error C2059: синтаксическая ошибка: >
+D:\StudioProject\Homework_STL\Test\functions.h(15,26): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(17,29): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(20,44): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(20,61): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(20,32): error C3861: max_element: идентификатор не найден
+D:\StudioProject\Homework_STL\Test\functions.h(21,44): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(21,61): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(21,32): error C3861: min_element: идентификатор не найден
+D:\StudioProject\Homework_STL\Test\functions.h(24,28): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(24,45): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(24,23): error C2672: "std::sort": не найдена соответствующая перегруженная функция
+D:\StudioProject\Homework_STL\Test\functions.h(24,58): error C2780: void std::sort(const _RanIt,const _RanIt): требует аргументов: 2, имеется: 1
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\algorithm(7463): message : см. объявление "std::sort"
+D:\StudioProject\Homework_STL\Test\functions.h(24,58): error C2780: void std::sort(const _RanIt,const _RanIt,_Pr): требует аргументов: 3, имеется: 1
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\algorithm(7455): message : см. объявление "std::sort"
+D:\StudioProject\Homework_STL\Test\functions.h(24,69): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(28,2): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(28,17): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(29,10): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(32,30): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(32,48): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(34,36): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(36,45): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(36,63): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(38,38): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(38,55): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(38,23): error C2672: "std::random_shuffle": не найдена соответствующая перегруженная функция
+D:\StudioProject\Homework_STL\Test\functions.h(38,68): error C2780: void std::random_shuffle(_RanIt,_RanIt): требует аргументов: 2, имеется: 1
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\algorithm(4997): message : см. объявление "std::random_shuffle"
+D:\StudioProject\Homework_STL\Test\functions.h(38,68): error C2780: void std::random_shuffle(_RanIt,_RanIt,_RngFn &&): требует аргументов: 3, имеется: 1
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\algorithm(4975): message : см. объявление "std::random_shuffle"
+D:\StudioProject\Homework_STL\Test\functions.h(38,79): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(40,46): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(40,64): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(42,30): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(44,19): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(44,46): error C2065: mainvec: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(48,2): error C2065: functions: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(48,30): error C2039: "bind": не является членом "std".
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\iostream(19): message : см. объявление "std"
+D:\StudioProject\Homework_STL\Test\functions.h(48,42): error C2660: bind: функция не принимает 1 аргументов
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winsock.h(744,16): message : см. объявление "bind"
+D:\StudioProject\Homework_STL\Test\functions.h(49,2): error C2065: functions: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(49,30): error C2039: "bind": не является членом "std".
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\iostream(19): message : см. объявление "std"
+D:\StudioProject\Homework_STL\Test\functions.h(49,42): error C2660: bind: функция не принимает 1 аргументов
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winsock.h(744,16): message : см. объявление "bind"
+D:\StudioProject\Homework_STL\Test\functions.h(50,2): error C2065: functions: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(50,30): error C2039: "bind": не является членом "std".
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\iostream(19): message : см. объявление "std"
+D:\StudioProject\Homework_STL\Test\functions.h(50,42): error C2660: bind: функция не принимает 1 аргументов
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winsock.h(744,16): message : см. объявление "bind"
+D:\StudioProject\Homework_STL\Test\functions.h(51,2): error C2065: functions: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(51,30): error C2039: "bind": не является членом "std".
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\iostream(19): message : см. объявление "std"
+D:\StudioProject\Homework_STL\Test\functions.h(51,42): error C2660: bind: функция не принимает 1 аргументов
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winsock.h(744,16): message : см. объявление "bind"
+D:\StudioProject\Homework_STL\Test\functions.h(52,2): error C2065: functions: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(52,30): error C2039: "bind": не является членом "std".
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\iostream(19): message : см. объявление "std"
+D:\StudioProject\Homework_STL\Test\functions.h(52,42): error C2660: bind: функция не принимает 1 аргументов
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winsock.h(744,16): message : см. объявление "bind"
+D:\StudioProject\Homework_STL\Test\functions.h(53,2): error C2065: functions: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(53,30): error C2039: "bind": не является членом "std".
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\iostream(19): message : см. объявление "std"
+D:\StudioProject\Homework_STL\Test\functions.h(53,42): error C2660: bind: функция не принимает 1 аргументов
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winsock.h(744,16): message : см. объявление "bind"
+D:\StudioProject\Homework_STL\Test\functions.h(54,2): error C2065: functions: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(54,30): error C2039: "bind": не является членом "std".
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\iostream(19): message : см. объявление "std"
+D:\StudioProject\Homework_STL\Test\functions.h(54,42): error C2660: bind: функция не принимает 1 аргументов
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winsock.h(744,16): message : см. объявление "bind"
+D:\StudioProject\Homework_STL\Test\functions.h(55,2): error C2065: functions: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(55,30): error C2039: "bind": не является членом "std".
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\iostream(19): message : см. объявление "std"
+D:\StudioProject\Homework_STL\Test\functions.h(55,42): error C2660: bind: функция не принимает 1 аргументов
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winsock.h(744,16): message : см. объявление "bind"
+D:\StudioProject\Homework_STL\Test\functions.h(56,2): error C2065: functions: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(56,30): error C2039: "bind": не является членом "std".
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\iostream(19): message : см. объявление "std"
+D:\StudioProject\Homework_STL\Test\functions.h(56,42): error C2660: bind: функция не принимает 1 аргументов
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winsock.h(744,16): message : см. объявление "bind"
+D:\StudioProject\Homework_STL\Test\functions.h(57,2): error C2065: functions: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(57,30): error C2039: "bind": не является членом "std".
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\iostream(19): message : см. объявление "std"
+D:\StudioProject\Homework_STL\Test\functions.h(57,43): error C2660: bind: функция не принимает 1 аргументов
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winsock.h(744,16): message : см. объявление "bind"
+D:\StudioProject\Homework_STL\Test\functions.h(58,2): error C2065: functions: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(58,30): error C2039: "bind": не является членом "std".
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\iostream(19): message : см. объявление "std"
+D:\StudioProject\Homework_STL\Test\functions.h(58,43): error C2660: bind: функция не принимает 1 аргументов
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winsock.h(744,16): message : см. объявление "bind"
+D:\StudioProject\Homework_STL\Test\functions.h(59,2): error C2065: functions: необъявленный идентификатор
+D:\StudioProject\Homework_STL\Test\functions.h(59,30): error C2039: "bind": не является членом "std".
+D:\VisualStudio\VC\Tools\MSVC\14.32.31326\include\iostream(19): message : см. объявление "std"
+D:\StudioProject\Homework_STL\Test\functions.h(59,43): error C2660: bind: функция не принимает 1 аргументов
+C:\Program Files (x86)\Windows Kits\10\Include\10.0.19041.0\um\winsock.h(744,16): message : см. объявление "bind"
+D:\StudioProject\Homework_STL\Test\Source.cpp(23,12): warning C4244: аргумент: преобразование "time_t" в "unsigned int", возможна потеря данных
+D:\StudioProject\Homework_STL\Test\Source.cpp(24,2): error C2065: functions: необъявленный идентификатор
